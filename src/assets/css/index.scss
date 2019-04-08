@@ -1,0 +1,146 @@
+.index {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 36px;
+  position: absolute;
+  bottom: 1rem;
+  top: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 92%;
+}
+
+.topBar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c7c7cc;
+  background: #ff6600;
+  color: white;
+}
+
+.search-text {
+  height: 50px;
+  width: 600px;
+  border-radius: 8px;
+  border: none;
+  font-size: 36px;
+}
+
+.category-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.category {
+  width: 21%;
+  padding: 8px 0px 14px 0px;
+}
+
+.photo {
+  width: 110px;
+  height: 110px;
+  margin: 0px 24px 4px 24px;
+}
+
+.category-name {
+  margin: 0px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.more-category {
+  width: 80%;
+  background: #ff6600;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.more-category:active {
+  opacity: 0.8;
+}
+
+.recommend-box {
+  background: white;
+  margin-top: 16px;
+  padding: 0 20px;
+}
+
+.recommend-top-bar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.replace {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.replace p {
+  margin: 0px;
+  font-size: 30px;
+  color: #ff6600;
+}
+
+.replace img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.product-box {
+  display: flex;
+  padding: 16px 0px;
+  border-bottom: 1px solid #c7c7cc;
+}
+
+.product-box img {
+  width: 160px;
+  height: 160px;
+  margin-right: 10px;
+}
+
+.product-msg {
+  width: 540px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.product-msg p {
+  margin: 0px;
+}
+
+.product-name {
+  font-size: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.money {
+  color: #ff6600;
+}
+
+.symbol {
+  font-size: 24px;
+}

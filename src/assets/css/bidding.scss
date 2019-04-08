@@ -1,0 +1,64 @@
+.bidding {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 36px;
+}
+
+.topBar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c7c7cc;
+}
+
+.my-bidding-box {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 87%;
+}
+
+.bidding-product {
+  height: 200px;
+  padding: 0px 20px;
+  border-bottom: 1px solid #c7c7cc;
+  display: flex;
+  align-items: center;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  margin-right: 10px;
+}
+
+.product-msg {
+  width: 540px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.product-msg p {
+  margin: 0px;
+}
+
+.product-name {
+  font-size: 30px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.money {
+  color: #ff6600;
+}
+
+.symbol {
+  font-size: 24px;
+}

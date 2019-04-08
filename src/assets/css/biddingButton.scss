@@ -1,0 +1,18 @@
+.biddingButton {
+  height: 8%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #c7c7cc;
+  background: white;
+  display: flex;
+  background: #ff6600;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 42px;
+}
+
+.biddingButton:active {
+  opacity: 0.8;
+}

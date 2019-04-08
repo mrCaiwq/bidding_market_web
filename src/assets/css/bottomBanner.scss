@@ -1,0 +1,28 @@
+.bottomBanner {
+  height: 8%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #c7c7cc;
+  background: white;
+  display: flex;
+}
+
+.icon-box {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-box img {
+  width: 56px;
+  height: 56px;
+}
+
+.icon-box p {
+  margin: 0px;
+  font-size: 24px;
+}

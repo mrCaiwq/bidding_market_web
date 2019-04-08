@@ -1,0 +1,216 @@
+.productDetail {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 36px;
+  height: 100%;
+}
+
+.topBar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c7c7cc;
+  background: #ff6600;
+  color: white;
+}
+
+.product-box {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 87%;
+}
+
+.back-button {
+  width: 70px;
+  height: 70px;
+  margin: 0 230px 0 10px;
+}
+
+.back-button img {
+  width: 70px;
+  height: 70px;
+}
+
+.banner {
+  width: 100%;
+  height: 370px;
+  border-bottom: 1px solid #c7c7cc;
+}
+
+.banner img {
+  width: 100%;
+  height: 370px;
+}
+
+.product-detail {
+  height: 170px;
+  padding: 0 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.product-detail p {
+  margin: 0px;
+  font-size: 32px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.money {
+  color: #ff6600;
+}
+
+.symbol {
+  font-size: 24px;
+}
+
+.time-box {
+  display: flex;
+}
+
+.time-box span {
+  color: #ff6600;
+}
+
+.current-price-box {
+  height: 120px;
+  padding: 0px 20px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bidding-price-box {
+  height: 140px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bidding-price {
+  width: 400px;
+  height: 80px;
+  font-size: 36px;
+  border: 1px solid #c7c7cc;
+  border-radius: 8px;
+  margin: 20px 0px;
+}
+
+.start-price {
+  color: #333;
+}
+
+.start-price-symbol {
+  font-size: 24px;
+}
+
+.current-price {
+  color: #ff6600;
+}
+
+.product-description {
+  min-height: 370px;
+  padding: 0px 20px;
+  background: white;
+}
+
+.product-description p {
+  margin: 0px;
+  font-size: 30px;
+  color: #333;
+  text-indent: 30px;
+  word-wrap: break-word;
+}
+
+.recommend-top-bar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-weight: 700;
+}
+
+.biddingButton {
+  height: 8%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #c7c7cc;
+  background: white;
+  display: flex;
+  background: #ff6600;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 42px;
+}
+
+.biddingButton:active {
+  opacity: 0.8;
+}
+
+.notify-box {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  padding: 0% 100px;
+}
+
+.msg-box {
+  width: 100%;
+  border: 1px solid #c7c7cc;
+  background: white;
+  word-break: break-all;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.button-box {
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.close {
+  background: red;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  border-radius: 8px;
+}
+
+.bidding {
+  background: #ff6600;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.button-box div:active {
+  opacity: 0.8;
+}

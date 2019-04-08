@@ -1,0 +1,130 @@
+.createBidding {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 36px;
+  position: relative;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 92%;
+}
+
+.topBar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c7c7cc;
+  font-size: 36px;
+}
+
+.register-box {
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.outer-box {
+  width: 700px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  margin-bottom: 26px;
+  font-size: 36px;
+}
+
+.outer-box div {
+  margin: 30px;
+}
+
+.outer-box input {
+  border: none;
+  height: 100%;
+  background: #f0f0f0;
+  font-size: 36px;
+  outline: none;
+  width: 500px;
+}
+
+.outer-box textarea {
+  border: none;
+  height: 100%;
+  background: #f0f0f0;
+  font-size: 36px;
+  outline: none;
+  width: 500px;
+}
+
+.outer-box .select-box {
+  margin: 6px;
+}
+
+
+.register-button {
+  width: 700px;
+  height: 110px;
+  background: #ff6600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+}
+
+.register-button:active {
+  opacity: 0.9;
+}
+
+.login {
+  margin-top: 30px;
+}
+
+.login:active {
+  color: #ff6600
+}
+
+.select-box {
+  border: solid 1px #c7c7cc;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 300px;
+  height: 80px;
+  font-size: 36px;
+  background: white;
+  outline: none;
+  border-radius: 8px;
+  background: url("~@/assets/pull.png") no-repeat scroll right center transparent;
+}
+
+.select-button {
+  background: #ff6600;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+
+.select-button:active {
+  opacity: 0.8;
+}
+
+.img-show-box {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f0f0f0;
+  margin-bottom: 26px;
+  font-size: 36px;
+}
+
+.img-show-box img {
+  width: 300px;
+  height: 200px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
