@@ -117,8 +117,12 @@ export default {
               v.state = "(流拍)";
             }
           });
-          this.productList = product;
-          this.showList = product.slice(0, 10);
+          product.forEach((v, index) => {
+            if (v.is_active !== false) {
+              this.productList.push(v);
+            }
+          });
+          this.showList = this.productList.slice(0, 10);
         })
         .catch(err => {
           console.log(err);

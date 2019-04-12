@@ -7,7 +7,7 @@ import MyCenter from '@/pages/myCenter'
 import Category from '@/pages/category'
 import Bidding from '@/pages/bidding'
 import ProductDetail from '@/pages/ProductDetail'
-import InputPrice from '@/pages/inputBiddingPrice'
+import pay from '@/pages/pay'
 import MyPublish from '@/pages/myPublish'
 import CreateBidding from '@/pages/createBidding'
 
@@ -17,61 +17,61 @@ const routes = [{
   path: '/',
   component: Index,
   meta: {
-    name: '首页'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/login',
   component: Login,
   meta: {
-    name: '登陆'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/register',
   component: Register,
   meta: {
-    name: '注册'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/myCenter',
   component: MyCenter,
   meta: {
-    name: '我的'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/category',
   component: Category,
   meta: {
-    name: '分类'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/bidding',
   component: Bidding,
   meta: {
-    name: '拍卖'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/detail',
   component: ProductDetail,
   meta: {
-    name: '商品详情'
+    name: '循易购拍卖平台'
   }
 }, {
-  path: '/inputPrice',
-  component: InputPrice,
+  path: '/pay',
+  component: pay,
   meta: {
-    name: '竞价'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/myPublish',
   component: MyPublish,
   meta: {
-    name: '我的拍卖物品'
+    name: '循易购拍卖平台'
   }
 }, {
   path: '/createBidding',
   component: CreateBidding,
   meta: {
-    name: '创建拍卖'
+    name: '循易购拍卖平台'
   }
 }]
 

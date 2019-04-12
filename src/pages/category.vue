@@ -13,9 +13,17 @@
     <div class="product-list-box">
       <div class="category-bar">{{currentCategory}}</div>
       <div class="product-list">
-        <div class="product" v-for="(product,index) in productList" :key="index">
+        <div
+          class="product"
+          v-for="(product,index) in productList"
+          :key="index"
+          @click="detail(product)"
+        >
           <div class="img-box">
-            <img :src="product.banner_url" class="product-img">
+            <img
+              :src="product.banner_url != null ? 'http://monkeytech.tech:8082'+product.banner_url[0] : ''"
+              class="product-img"
+            >
           </div>
           <div class="product-msg">
             <p class="product-name" v-html="product.name"></p>
@@ -52,17 +60,30 @@ export default {
         .then(data => {
           const products = data.data;
           products.forEach(v => {
+            if (v.banner_url != "" && v.banner_url != null) {
+              v.banner_url = v.banner_url.split(",");
+            }
             if (v.state == "ready" || v.state == "bidding") {
               v.state = "(正在拍卖)";
             } else {
               v.state = "(流拍)";
             }
           });
-          this.productList = products;
+          products.forEach((v, index) => {
+            if (v.is_active !== false) {
+              this.productList.push(v);
+            }
+          });
         })
         .catch(err => {
           console.log(err);
         });
+    },
+    detail(val) {
+      this.$router.push({
+        path: "/detail",
+        query: val
+      });
     },
     category() {
       this.getCategory()
@@ -79,6 +100,9 @@ export default {
         .then(data => {
           const products = data.data;
           products.forEach(v => {
+            if (v.banner_url != "" && v.banner_url != null) {
+              v.banner_url = v.banner_url.split(",");
+            }
             if (v.state == "ready") {
               v.state = "(准备拍卖)";
             } else if (v.state == "bidding") {
@@ -87,7 +111,11 @@ export default {
               v.state = "(流拍)";
             }
           });
-          this.productList = products;
+          products.forEach((v, index) => {
+            if (v.is_active !== false) {
+              this.productList.push(v);
+            }
+          });
         })
         .catch(err => {
           console.log(err);

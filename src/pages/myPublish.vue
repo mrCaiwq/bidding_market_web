@@ -45,10 +45,14 @@ export default {
           let product = data.data;
           product.forEach(v => {
             v.banner_url = v.banner_url.split(",");
-            if (v.state == "ready" || v.state == "bidding") {
-              v.state = "(正在拍卖)";
+            if (v.is_active === true) {
+              if (v.state == "ready" || v.state == "bidding") {
+                v.state = "(正在拍卖)";
+              } else {
+                v.state = "(流拍)";
+              }
             } else {
-              v.state = "(流拍)";
+              v.state = "(等待审核)";
             }
           });
           this.productList = product;

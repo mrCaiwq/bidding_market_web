@@ -63,6 +63,7 @@
 
 <script>
 var clock;
+var refreshProduct;
 import { mapActions } from "vuex";
 export default {
   name: "productDetail",
@@ -97,7 +98,6 @@ export default {
   methods: {
     ...mapActions(["getDetail", "postBidding"]),
     getProduct(id) {
-      console.log(id);
       this.getDetail(id)
         .then(data => {
           this.product = data.data;
@@ -115,7 +115,9 @@ export default {
       }, 1000);
     },
     back() {
-      this.$router.back(-1);
+      this.$router.push({
+        path: "/"
+      });
     },
     countDown() {
       let start = new Date(this.product.createdAt).getTime();
@@ -154,23 +156,27 @@ export default {
       this.isShow = false;
     },
     send() {
-      this.postBidding(this.biddingMsg)
-        .then(data => {
-          alert("竞价成功");
-          this.isShow = false;
-          this.getProduct(this.$route.query.id);
-        })
-        .catch(err => {
-          console.log(err);
-        });
+      if (this.biddingMsg.price <= this.product.curr_price) {
+        alert("竞拍价必须大于当前价");
+        return;
+      }
+      this.biddingMsg.name = this.product.name;
+      this.$router.push({
+        path: "/pay",
+        query: this.biddingMsg
+      });
     }
   },
   watch: {},
   computed: {},
   destroyed() {
     window.clearTimeout(clock);
+    window.clearTimeout(refreshProduct);
   },
   mounted() {
+    refreshProduct = setInterval(() => {
+      this.getProduct(this.$route.query.id);
+    }, 20000);
     this.getProduct(this.$route.query.id);
   }
 };
